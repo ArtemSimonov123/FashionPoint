@@ -155,3 +155,11 @@ small{
     color: #080201;
     background-color: #a6fc08;
 }
+/*<-----------Відгуки---------->*/
+.testimoial {
+    padding-top: 100px;
+}
+.testimoial col-3 {
+    text-align: center;
+    padding: 40px 20px;
+}
