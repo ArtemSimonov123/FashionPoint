@@ -156,10 +156,15 @@ small{
     background-color: #a6fc08;
 }
 /*<-----------Відгуки---------->*/
-.testimoial {
+.testimonial {
     padding-top: 100px;
 }
-.testimoial col-3 {
+.testimonial .col-3 {
     text-align: center;
     padding: 40px 20px;
+}
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
 }
