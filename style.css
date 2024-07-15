@@ -138,7 +138,7 @@ h4{
 .col-4:hover{
     transform: translateY(-5px);
 }
-
+/*<-----------Пропозиції------------>*/
 .offer {
     background: radial-gradient(#fff,#a5dd3e);
     margin-top: 80px;
