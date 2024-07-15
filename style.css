@@ -230,6 +230,11 @@ width: 160px;
     flex: 1; 
     text-align: center;
  }
+
+.footer-col-2 img{
+    width: 350px; 
+    margin: 20px 0; 
+}
  .footer-col-3 img{
     width: 180px;
     margin-bottom: 20px;
