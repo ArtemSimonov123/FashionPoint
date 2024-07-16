@@ -302,6 +302,10 @@ select:focus{
     line-height: 40px;
     cursor: pointer;
 }
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
 
 
  /*------Медіа-запит для меню------*/
