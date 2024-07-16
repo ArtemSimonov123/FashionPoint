@@ -34,21 +34,21 @@
 <div class="small-container single-product">
     <div class="row">
         <div class="col-2">
-        <img src="images/gallery-1.jpg" width="100%">
+        <img src="images/gallery-1.jpg" width="100%" id="ProductImg">
         
         <div class="small-img-row">
             <div class="small-img-col">
-                <img src="images/gallery-1.jpg" width="100%">
+            <img src="images/gallery-1.jpg" width="100%" class="small-img">
             </div>
             <div class="small-img-col">
-                    <img src="images/gallery-2.jpg" width="100%">
-                </div>
-                    <div class="small-img-col">
-                        <img src="images/gallery-3.jpg" width="100%">
-                    </div>
-                        <div class="small-img-col">
-                            <img src="images/gallery-4.jpg" width="100%">
-                        </div>
+            <img src="images/gallery-2.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+            <img src="images/gallery-3.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+            <img src="images/gallery-4.jpg" width="100%" class="small-img">
+            </div>
         </div>
     
     
@@ -192,6 +192,28 @@
     }
     }
  </script>
+<!------JS для галереї товарів------------->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function() 
+    {
+        ProductImg.scr = SmallImg[0].scr;
+    }
+    SmallImg[1].onclick = function() 
+    {
+        ProductImg.scr = SmallImg[1].scr;
+    }
+    SmallImg[2].onclick = function() 
+    {
+        ProductImg.scr = SmallImg[2].scr;
+    }
+    SmallImg[3].onclick = function() 
+    {
+        ProductImg.scr = SmallImg[3].scr;
+    }
+</script>
 
     </body>
     </html>
