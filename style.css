@@ -311,10 +311,10 @@ select:focus{
 .single-product{
     margin-top: 80px;
 }
-.single-product . col-2 img{
+.single-product .col-2 img{
     padding: 0;
 }
-.single-product . col-2{
+.single-product .col-2{
     padding: 20px;
 }
 .single-product h4{
@@ -335,7 +335,7 @@ select:focus{
     margin-right: 10px;
     border: 1px solid #ff523b;
 }
-input: :focus{
+input:focus{
    outline: none; 
 }
 .single-product .fa{
@@ -351,7 +351,14 @@ input: :focus{
     cursor: pointer;
 }
 
-
+/*-------Речі, які в корзині-----------*/
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse ;
+}
  /*------Медіа-запит для меню------*/
 @media only screen and (max-width: 800px){
   
