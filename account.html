@@ -40,8 +40,9 @@
             <div class="col-2">
                 <div class="form-container">
                     <div class="form-btn">
-                        <span>Log in</span>
-                        <span>Реєстрація</span>
+                        <span onclick="login()">Log in</span>
+                        <span onclick="register()">Реєстрація</span>
+                        <hr id="Indicator">
                     </div>
                     <form id="LoginForm">
                         <input type="text" placeholder="Ім'я користувача">
@@ -117,6 +118,21 @@
     }
     }
  </script>
- 
+ <!------Js для перемикання кнопки реєстрації------>
+ <script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegisterForm = document.getElementById("RegisterForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegisterForm.style.transform = "translateX(0px)";
+       LoginForm.style.transform = "translateX(0px)";
+    }
+    function login(){
+        RegisterForm.style.transform = "translateX(300px)";
+       LoginForm.style.transform = "translateX(300px)";
+    }
+ </script>
+
     </body>
     </html>
