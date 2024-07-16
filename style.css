@@ -421,7 +421,7 @@ th:last-child{
 .form-container span{
     font-weight: bold;
     padding: 0 10px;
-    color: #555;
+    color: #797979;
     cursor: pointer;
     width: 100px;
     display: inline-block;
@@ -451,6 +451,15 @@ form .btn{
 }
 form btn:focus{
     outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegisterForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
 }
  /*------Медіа-запит для меню------*/
 @media only screen and (max-width: 800px){
