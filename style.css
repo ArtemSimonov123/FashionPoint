@@ -42,7 +42,7 @@ p{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }    
 .col-2{
     flex-basis: 50%;
@@ -95,14 +95,17 @@ margin-top: 70px;
     padding-right: 25px;
 }
 .col-4{
-    flex-basis: 25%;
+    flex-basis: 250px;
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.5s;
 }
 .col-4 img{
-width: 100%;
+width: 120%;
+height: auto;
+max-width: 240px;
+object-fit: cover;
 }
 
 .title{
@@ -278,7 +281,13 @@ width: 140px;
     justify-content: space-between;
     margin: 100px auto 50px;
 }
-
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
 
 
 
