@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Всі товари - FashionPoint </title>
+        <title>Акаунт - FashionPoint </title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -38,17 +38,18 @@
                 <img src="images/image1.png" width="100%">
             </div>
             <div class="col-2">
+                
                 <div class="form-container">
                     <div class="form-btn">
-                        <span onclick="login()">Log in</span>
+                        <span onclick="login()">Увійти</span>
                         <span onclick="register()">Реєстрація</span>
                         <hr id="Indicator">
                     </div>
                     <form id="LoginForm">
                         <input type="text" placeholder="Ім'я користувача">
                         <input type="password" placeholder="Пароль">
-                        <button type="submit" class="btn">Log in</button>
-                        <a href="">Забув пароль</a>
+                        <button type="submit" class="btn">Увійти</button>
+                        <a href="">Забули пароль?</a>
                     </form>
                     <form id="RegisterForm">
                         <input type="text" placeholder="Ім'я користувача">
@@ -57,6 +58,7 @@
                         <button type="submit" class="btn">Реєстрація</button>
                     </form>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -125,14 +127,20 @@
     var Indicator = document.getElementById("Indicator");
 
     function register(){
-        RegisterForm.style.transform = "translateX(0px)";
-       LoginForm.style.transform = "translateX(0px)";
+        RegisterForm.style.left = "0px";
+        LoginForm.style.left = "-300px";
+        Indicator.style.transform = "translateX(100px)";
     }
+
     function login(){
-        RegisterForm.style.transform = "translateX(300px)";
-       LoginForm.style.transform = "translateX(300px)";
+        RegisterForm.style.left = "300px";
+        LoginForm.style.left = "0px";
+        Indicator.style.transform = "translateX(0px)";
     }
- </script>
+</script>
+
+
+
 
     </body>
     </html>
