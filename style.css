@@ -403,6 +403,11 @@ td:last-child{
 th:last-child{
     text-align: right;
 }
+/*-----Сторінка акаунта------*/
+.acoount-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#bef15f);
+}
  /*------Медіа-запит для меню------*/
 @media only screen and (max-width: 800px){
   
