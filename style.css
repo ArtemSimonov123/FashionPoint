@@ -274,7 +274,7 @@ width: 140px;
     display: none;
  }
  /*------Медіа-запит для меню------*/
-@media only screen and (max-width:800px){
+@media only screen and (max-width: 800px){
   
     nav ul{
        position: absolute; 
@@ -283,6 +283,7 @@ width: 140px;
        background: #333;
        width: 100%;
        overflow: hidden;
+       transition: max-height 0.5s;
     }
     nav ul li{
         display: block;
@@ -298,4 +299,15 @@ width: 140px;
         cursor: pointer;
     }
 
+}
+
+
+/*------Медіа-запит для меню менше ніж 600 пікселів------*/
+@media only screen and (max-width: 600px){
+.row{
+    text-align: center;
+}
+.col-2, .col-3, .col-4{
+    flex-basis: 100%;
+}
 }
